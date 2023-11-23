@@ -29,12 +29,13 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    name: "Slider",
+    pattern: "{area:exists}/{controller=Slider}/{action=Show}/{id?}"
+);
+
 
 app.MapControllerRoute(
-    name: "Slider",
-    pattern: "{area:exists}/{controller=Slider}/{action=Show}"
-);
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

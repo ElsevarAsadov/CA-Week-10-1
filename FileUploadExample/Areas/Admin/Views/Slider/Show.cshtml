@@ -1,1 +1,36 @@
-﻿
+﻿<div class="container-fluid p-3">
+    <a asp-controller="slider" asp-action="create">
+        <button class="btn btn-success">Create</button>
+    </a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Upper Text</th>
+            <th scope="col">Below Text</th>
+            <th scope="col">Button Text</th>
+            <th scope="col">Image Path</th>
+            <th scope="col">Image</th>
+            <th scope="col" class="text-center">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>ID</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td class="row justify-content-center">
+                <button type="button" class="btn btn-warning mr-5">Update</button>
+                <form method="post">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+
+        </tr>
+
+        </tbody>
+    </table>
+</div>

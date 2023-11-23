@@ -2,7 +2,7 @@
 
 namespace FileUploadExample.Areas.Admin.Models;
 
-public class Slider
+public class SliderModel
 {
     public int Id { get; set; }
     public string TextUpper { get; set; }
