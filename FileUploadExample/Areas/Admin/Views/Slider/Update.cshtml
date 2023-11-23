@@ -1,0 +1,28 @@
+﻿@model SliderModel
+
+<div class="container-fluid p-3">
+    <form method="POST" asp-action="UpdateSlider" asp-controller="Slider" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="TextUpper" class="form-label">Text Upper</label>
+            <input asp-for="TextUpper" class="form-control" value="@Model.TextUpper">
+            <span asp-validation-for="TextUpper" class="text-danger"></span>
+
+        </div>
+        <div class="mb-3">
+            <label asp-for="TextBelow" class="form-label">Text Below</label>
+            <input asp-for="TextBelow" class="form-control" value="@Model.TextBelow">
+            <span asp-validation-for="TextBelow" class="text-danger"></span>
+        </div>
+        <div asp-for="TextButton" class="mb-3">
+            <label asp-for="TextButton" class="form-label">Text Button</label>
+            <input asp-for="TextButton" class="form-control" value="@Model.TextButton">
+            <span asp-validation-for="TextButton" class="text-danger"></span>
+        </div>
+        <div>
+            <label asp-for="Image" class="form-label">Image</label>
+            <input asp-for="Image" />
+            <span asp-validation-for="Image" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+    </form>
+</div>

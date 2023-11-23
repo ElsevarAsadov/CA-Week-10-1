@@ -1,8 +1,10 @@
-﻿<div class="container-fluid p-3">
+﻿@model List<SliderModel>
+
+<div class="container-fluid p-3" >
     <a asp-controller="slider" asp-action="create">
         <button class="btn btn-success">Create</button>
     </a>
-    <table class="table">
+    <table class="table mt-4">
         <thead>
         <tr>
             <th scope="col">ID</th>
@@ -15,21 +17,31 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>ID</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td>#</td>
-            <td class="row justify-content-center">
-                <button type="button" class="btn btn-warning mr-5">Update</button>
-                <form method="post">
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form>
-            </td>
+            @foreach(SliderModel s in Model)
+            {
+                <tr>
+                    <th scope="row">1</th>
+                    <td>@s.Id</td>
+                    <td>@s.TextUpper</td>
+                    <td>@s.TextBelow</td>
+                    <td>@s.TextButton</td>
+                    <td>
+                        <src src="@s.Image"></src>
+                    </td>
 
-        </tr>
+                    <td class="row justify-content-center">
+                        <form method="post" asp-action="UpdateFile" asp-controller="Slider" enctype="multipart/form-data">
+                            <a asp-controler="Slider" asp-action="Update" asp-route-id="@s.Id">
+                                <button type="submit" class="btn btn-warning mr-5">Update</button>
+                            </a>
+                        </form>
+                        <form method="post" asp-action="Delete" asp-controller="Slider" asp-route-id="@s.Id">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+
+                </tr>
+            }
 
         </tbody>
     </table>

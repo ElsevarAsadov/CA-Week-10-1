@@ -1,18 +1,28 @@
-﻿<div class="container-fluid">
-    <form method="POST" asp-action="create" asp-controller="slider">
+﻿@model SliderModel
+
+<div class="container-fluid p-3">
+    <form method="POST" asp-action="SaveFile" asp-controller="Slider" enctype="multipart/form-data">
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">Weff'll never share your email with anyone else.</div>
+            <label asp-for="TextUpper" class="form-label">Text Upper</label>
+            <input asp-for="TextUpper" class="form-control" >
+            <span asp-validation-for="TextUpper" class="text-danger"></span>
+            
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label  asp-for="TextBelow" class="form-label">Text Below</label>
+            <input asp-for="TextBelow" class="form-control">
+            <span asp-validation-for="TextBelow" class="text-danger"></span>
         </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div asp-for="TextButton" class="mb-3">
+            <label asp-for="TextButton" class="form-label">Text Button</label>
+            <input  asp-for="TextButton"  class="form-control">
+            <span asp-validation-for="TextButton" class="text-danger"></span>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div>
+            <label asp-for="Image" class="form-label">Image</label>
+            <input asp-for="Image"/>
+            <span asp-validation-for="Image" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4">Submit</button>
     </form>
 </div>

@@ -31328,5 +31328,53 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\FileUploadExample.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\446-4468602_stardew-valley-chicken-pixel-art-hd-png-download.png-d5b53c7f-d89f-4c7a-b7ac-cdd0c225de31.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileUploadExample</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileUploadExample</BasePath>
+      <RelativePath>images/446-4468602_stardew-valley-chicken-pixel-art-hd-png-download.png-d5b53c7f-d89f-4c7a-b7ac-cdd0c225de31.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\446-4468602_stardew-valley-chicken-pixel-art-hd-png-download.png-d5b53c7f-d89f-4c7a-b7ac-cdd0c225de31.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\cute-and-adorable-bright-green-frog-pixel-art-style-suitable-for-sticker-and-decoration-free-vector.jpg-49666e3a-5400-4d04-b284-baceef994295.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileUploadExample</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileUploadExample</BasePath>
+      <RelativePath>images/cute-and-adorable-bright-green-frog-pixel-art-style-suitable-for-sticker-and-decoration-free-vector.jpg-49666e3a-5400-4d04-b284-baceef994295.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\cute-and-adorable-bright-green-frog-pixel-art-style-suitable-for-sticker-and-decoration-free-vector.jpg-49666e3a-5400-4d04-b284-baceef994295.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\cute-and-adorable-bright-green-frog-pixel-art-style-suitable-for-sticker-and-decoration-free-vector.jpg-6c9d1b10-637f-4d03-8f96-6b7b5da2f6f8.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FileUploadExample</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FileUploadExample</BasePath>
+      <RelativePath>images/cute-and-adorable-bright-green-frog-pixel-art-style-suitable-for-sticker-and-decoration-free-vector.jpg-6c9d1b10-637f-4d03-8f96-6b7b5da2f6f8.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\cute-and-adorable-bright-green-frog-pixel-art-style-suitable-for-sticker-and-decoration-free-vector.jpg-6c9d1b10-637f-4d03-8f96-6b7b5da2f6f8.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
   </ItemGroup>
 </Project>
