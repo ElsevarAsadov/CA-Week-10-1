@@ -90,18 +90,18 @@ public class SliderController : Controller
     [HttpGet]
     public IActionResult Update(int? id)
     {
-        if (id == null) return View("Show");
+        if (id == null) return NotFound();
 
         SliderModel? model = _context.Slider.FirstOrDefault(x => x.Id == id);
 
-        if (model == null) return View("Show");
+        if (model == null) return NotFound();
 
         return View(model);
     }
 
-
+    //i know this is shitty code but no time ;)
     [HttpPost]
-    public IActionResult UpdateFile(SliderModel? model)
+    public IActionResult UpdateFile(SliderModel model)
     {
         if (model == null)
         {

@@ -30,11 +30,11 @@
                     </td>
 
                     <td class="row justify-content-center">
-                        <form method="post" asp-action="UpdateFile" asp-controller="Slider" enctype="multipart/form-data">
+                       
                             <a asp-controler="Slider" asp-action="Update" asp-route-id="@s.Id">
-                                <button type="submit" class="btn btn-warning mr-5">Update</button>
+                                <button type="button" class="btn btn-warning mr-5">Update</button>
                             </a>
-                        </form>
+                        
                         <form method="post" asp-action="Delete" asp-controller="Slider" asp-route-id="@s.Id">
                             <button type="submit" class="btn btn-danger">Delete</button>
                         </form>

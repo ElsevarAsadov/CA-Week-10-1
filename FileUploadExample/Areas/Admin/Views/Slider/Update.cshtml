@@ -1,7 +1,7 @@
 ﻿@model SliderModel
 
 <div class="container-fluid p-3">
-    <form method="POST" asp-action="UpdateSlider" asp-controller="Slider" enctype="multipart/form-data">
+    <form method="POST" asp-action="UpdateFile" asp-controller="Slider" asp-route-id="@Model.Id" enctype="multipart/form-data">
         <div class="mb-3">
             <label asp-for="TextUpper" class="form-label">Text Upper</label>
             <input asp-for="TextUpper" class="form-control" value="@Model.TextUpper">
